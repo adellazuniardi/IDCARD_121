@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ID CARD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+      body {
+      background: #863A6F;
+      font-size: 19px;
+      width: 28%;
+      margin: auto;
+      padding-top: 150px;
+      
+      }
+      form {
+      padding-top: 50px;
+      padding-right: 30px;
+      padding-bottom: 50px;
+      padding-left: 30px;
+      border-radius: 15px;
+      border-color: black;
+      background: #975C8D;
+      }
+      .label p{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      button{
+          background: #393E46;
+          color: #ffffff;
+          border-radius: 5px;
+          
+      }
+        </style>
+    </head>
+    <body>
+        <form action="/viewCard" method="post" enctype="multipart/form-data">
+            <div class="label">
+                <p>Id Card Mahasiswa</p>
+            </div>
+            Name    <input type="text" name="name"/><br>
+            Date    <input type="date" name="tanggal"/><br>
+            Picture <input type="file" name="gambar"/><br>
+            <button type="submit" href="/">Submit</button>
+            
+        </form>
+    </body>
+</html>
